@@ -1,0 +1,44 @@
+{
+    "manifest_version": 2,
+    "name": "ChatGPT Text Enhancer",
+    "version": "1.0",
+    "description": "Enhance, explain, expand, consolidate, or answer highlighted text using ChatGPT.",
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "clipboardRead",
+        "clipboardWrite"
+    ],
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": "icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_idle"
+        }
+    ],
+    "options_page": "options.html",
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "web_accessible_resources": [
+        "styles.css",
+        "script.js"
+    ],
+    "content_security_policy": "script-src 'self'; object-src 'self'"
+}

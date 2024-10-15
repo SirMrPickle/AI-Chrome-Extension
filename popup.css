@@ -1,0 +1,40 @@
+body {
+    background-color: #23292b;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 10px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="range"],
+button {
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    font-size: 14px;
+}
+
+button {
+    background-color: #ffa000;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#slider-container {
+    display: flex;
+    align-items: center;
+}
+
+#sentence-count {
+    margin-right: 10px;
+}

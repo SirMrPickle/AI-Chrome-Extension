@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Extension</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div id="container">
+        <input type="text" id="input-text" placeholder="Enter text..." />
+        <label>Sentences:</label>
+        <div id="slider-container">
+            <span id="sentence-count">1</span>
+            <input type="range" id="sentences-slider" min="1" max="20" value="1" />
+        </div>
+        <button id="improve-btn">Improve this</button>
+        <button id="explain-btn">Explain this</button>
+        <button id="expand-btn">Expand on this</button>
+        <button id="consolidate-btn">Consolidate this</button>
+        <button id="answer-btn">Answer this</button>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
