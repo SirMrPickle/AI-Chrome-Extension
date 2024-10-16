@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Extension</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <div id="container">
+    <textarea id="input-text" placeholder="Enter text..."></textarea>
+
+    <label>Sentences:</label>
+    <div class="slider-container">
+      <span id="sentence-count">1</span>
+      <input type="range" id="sentences-slider" min="1" max="20" value="1" />
+    </div>
+
+    <label>Temperature:</label>
+    <div class="slider-container">
+      <span id="temperature-value">0.7</span>
+      <input type="range" id="temperature-slider" min="0.1" max="1" step="0.1" value="0.7" />
+    </div>
+
+    <div class="checkbox-container">
+      <div class="checkbox-item">
+        <input type="checkbox" id="example-checkbox" checked/>
+        <label for="example-checkbox">Provide Example</label>
+      </div>
+      <div class="checkbox-item">
+        <input type="checkbox" id="copy-checkbox" checked/>
+        <label for="copy-checkbox">Copy Answer</label>
+      </div>
+    </div>
+
+    <button id="improve-btn">Improve this</button>
+    <button id="explain-btn">Explain this</button>
+    <button id="expand-btn">Expand on this</button>
+    <button id="consolidate-btn">Consolidate this</button>
+    <button id="answer-btn">Answer this</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+/* Remove default margin and padding from the popup window */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #23292b;
+}
+
+/* Container styling for the popup */
+#container {
+    padding: 20px;
+    background-color: #23292b;
+    color: #ffffff;
+    font-family: 'Ubuntu', Arial, sans-serif; /* Updated font */
+    width: 300px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure uniform styling for both sliders */
+.slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+/* Styling for range inputs (sliders) */
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 150px;
+    height: 8px;
+    border-radius: 5px;
+    background: #ffa000;
+    outline: none;
+    opacity: 0.9;
+    transition: opacity 0.2s;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #23292b;
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #23292b;
+    cursor: pointer;
+}
+
+/* Style for the number display next to the sliders */
+span {
+    padding-right: 10px;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+/* Button styling */
+button {
+    background-color: #ffa000;
+    border: none;
+    color: #23292b;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 5px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #ff8f00;
+}
+
+/* Input text box styling */
+#input-text {
+    width: 92%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ffa000;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #23292b;
+    font-size: 13px;
+    height: 25px;
+    resize: none;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    font: 'Ubuntu';
+}
+
+/* Headings and labels */
+label {
+    font-size: 13px;
+    margin-bottom: 5px;
+    color: #ffffff;
+    font: 'Ubuntu';
+}
+
+/* Checkbox container styling */
+.checkbox-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+/* Checkbox item styling */
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-family: 'Ubuntu', Arial, sans-serif; /* Updated font */
+}
+
+.checkbox-item input[type="checkbox"] {
+    margin-right: 5px;
+}
