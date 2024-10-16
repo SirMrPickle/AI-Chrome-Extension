@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "ChatGPT Text Enhancer",
-    "version": "1.0",
+    "version": "0.2",
     "description": "Enhance, explain, expand, consolidate, or answer highlighted text using ChatGPT.",
     "permissions": [
         "activeTab",
